@@ -5,35 +5,46 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: #6C7DC8;
 }
 
 .task-list {
   display: flex;
   flex-direction: column;
-  margin: 1rem;
+  margin: 3rem 1rem;
   overflow-y: scroll;
 }
 
 .task-item {
   display: flex;
   flex-direction: row;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  padding: 0.5rem;
+  background-color: white;
+  border-radius: 0.2rem;
 }
 
 .task-item input {
   margin-right: 1rem;
 }
 
-.start-btn-large {
-  min-width: 8rem;
-  min-height: 8rem;
+.shadow {
+  box-shadow: 0 0 2px 2px #00000014;
 }
 
-.btn-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 0.5rem;
-  margin-top: 0.5rem;
+.start-btn {
+  position: absolute;
+  height: 3rem;
+  width: 3rem;
+  right: 1.1rem;
+  bottom: 0.3rem;
+  background-color: #EBF5FF;
+  color: black;
+  border: none;
+}
+
+.start-btn:hover {
+  background-color: #D6EBFF;
+  color: black;
 }
